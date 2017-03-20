@@ -1,0 +1,107 @@
+$inner-padding = 0.5em
+
+.cards-wrapper
+  clearfix()
+  position: relative
+  margin: -1 * $inner-padding
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  margin-bottom: 1.5rem
+
+  .card
+    will-change: transform
+    transition: all 0.3s ease-in
+    flex: 0 1 calc(33.33333333333% - 1.05em)
+    margin-bottom: .5rem
+    border-radius: $base-border-radius
+    color: $base-background-color
+    padding: .5em
+    cursor: pointer
+
+    &.clickable
+      cursor: pointer
+
+    .inner
+      border-radius: $base-border-radius
+      background: white
+      padding: 1em
+      position: relative
+
+    header
+      padding: 1rem
+      clearfix()
+      color: white
+      margin-bottom: 0.5em
+      border-radius: $base-border-radius $base-border-radius 0 0
+      margin: -1em -1em 2em -1em
+
+      h4
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+      .avatar-wrapper
+        position: relative
+        a
+          cursor: pointer
+        .avatar
+          transition: all 0.2s ease-in
+          position: absolute
+          background-color: #FFF
+          width: 105px
+          height: 105px
+          border-radius: 50%
+          display: block
+          margin-bottom: .5rem
+          border: 3px solid #fff
+          z-index: 999
+          will-change: transform
+      .info-wrapper
+        padding-left: 40%
+
+    .card-body
+      padding: 1rem
+      margin: -1em
+      clearfix()
+      border-radius: 0 0 $base-border-radius $base-border-radius
+    .meta
+      font-size: 0.9em
+      li
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+      .fa
+        font-size: 0.9em
+    .headline
+      height: 3em
+      font-style: italic
+      margin-bottom: 2rem
+    .contact-info
+      margin: -1*1rem
+      padding: 1rem
+      background: tint($gray, 10)
+      border-radius: 0 0 $base-border-radius $base-border-radius
+    &.female
+      header
+        background: tint($pink, 10)
+    &.male
+      header
+        background: tint($blue, 10)
+    &:hover
+      header
+        .avatar
+          transform: scale(1.2)
+          margin-top: -1*30px
+  .fa
+    margin-right: 1em
+    opacity: 0.5
+.card-enter
+  transition(0.5s linear all)
+  opacity: 0.01
+.card-enter.card-enter-active
+  opacity: 1
+.card-leave
+  transition(0.5s linear all)
+  opacity: 1
+.card-leave.card-leave-active
+  opacity: 0.01

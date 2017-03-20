@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello PhoenixAndElm!</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Average+Sans" rel="stylesheet" type="text/css"}/>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"/>
+    <link id="favicon" rel="icon" type="image/png" href="<%= static_path(@conn, "/images/favicon.png") %>"/>
+  </head>
+
+  <body>
+    <div id="main_wrapper">
+      <%= render @view_module, @view_template, assigns %>
+    </div>
+    <footer id="main_footer">
+      Crafted with ♥ by
+      <a href="http://codeloveandboards.com" target="_blank"> bigardone</a>
+      <br/>
+      Check out the
+      <a href="https://github.com/bigardone/phoenix-and-elm" target="_blank"> source code</a>
+    </footer>
+    <script src="https://use.fontawesome.com/2469a3fc21.js"></script>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
