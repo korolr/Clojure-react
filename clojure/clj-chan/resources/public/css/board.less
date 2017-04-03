@@ -1,0 +1,55 @@
+/**
+ * A general style for a board page.
+ */
+
+@grey: #333333;
+@light-grey: #555555;
+@hacky-green: #00FF00;
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: @grey;
+  color: @hacky-green;
+  input, textarea, button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    background: @light-grey;
+    color: @hacky-green;
+    border-color: black;
+  }
+}
+
+header {
+  font-size: 2em;
+}
+
+#boards-list {
+    .board-element {
+
+    }
+}
+
+#menu {
+
+}
+
+#new-post {
+  label {
+    width: 20%;
+    float: left;
+    text-align: left;
+  }
+
+  #new-author, #new-image, #new-text {
+      width: 33%;
+  }
+}
+
+.post {
+  .post-image {
+    img {
+      max-width: 33%;
+      max-height: 33%;
+    }
+  }
+}
