@@ -7,10 +7,9 @@
                  [compojure "1.1.3"]
                  [hiccup "1.0.3"]
                  [com.cemerick/friend "0.1.3"]
-                 [com.novemberain/monger "1.4.2"]
                  [http-kit "2.0-rc1"]
                  [enfocus "1.0.0-beta2"]
-                 [prismatic/dommy "0.0.1"]]
+                 [prismatic/dommy "0.0.3"]]
   :main         clj-chan.server
   :plugins      [[lein-cljsbuild "0.2.10"]]
   :source-paths ["src/clj"]
