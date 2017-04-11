@@ -26,7 +26,7 @@
 
 (defn simple-example []
   [:div
-   [greeting "Hello world, it is now"]
+   [greeting "Hello world"]
    [clock]
    [color-input]])
 
