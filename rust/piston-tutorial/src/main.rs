@@ -106,11 +106,6 @@ impl Game {
         if self.left_d && !self.player1.is_destroyed {
             self.player1.rot(-1.0 * upd.dt);
         }
-        if self.right_d && !self.player1.is_destroyed {
-            self.player1.rot(1.0 * upd.dt);
-        }
-        self.player1.update(upd.dt);
-        self.player2.update(upd.dt);
     }
     fn on_draw(&mut self, ren: RenderArgs, e: PistonWindow) {
         self.scx = (ren.width / 2) as f64;
