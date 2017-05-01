@@ -1,0 +1,5 @@
+/dist/
+*.tmp
+*.swp
+*.swo
+.stack-work/

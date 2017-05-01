@@ -1,0 +1,83 @@
+use record of functions instead of classes and instances?
+geometry.hs needs cleanup
+
+write proper readme with example
+gradients
+rename gl methods to fill or stroke or wired
+
+add classes for velocity and collision etc to use same function name for all types
+
+remove bordered rectangle, since it's too complicated to use with transparency
+
+font is currently fixed, make it possible to set it
+
+Shapes needs major refactor
+
+freeze dependencies
+
+move more geometry helpers here and define them by class params
+
+unify class names (little wild currently)
+
+add example (maybe new github page which uses HGE2D)
+
+with sizes etc. the transform to gl methods will work on HasSize interface, start adding them to the engine
+
+transform code of example2 has to become part of the engine
+
+build instructions in readme
+
+hackage
+
+missing callbacks for keyboard interaction
+
+add camera transform to renderinstructions and write helper method which is able to transfer pxPos to glPos (scale and translate on total rendering)
+(see example 2) (add two function versions, one where 0/0 is at upper left, one where 0/0 is at lower left)
+
+better describe examples
+
+give examples actual names to make it easier to navigate them later on
+
+example where e.g. rectangle rotates around cursor pos
+
+example3 rectangle wont properly show without hovering the mouse (bug?)
+
+some examples have incorrect text (e.g. example2 and 3 stating that input is ignored, while not ignoring it)
+
+improve example texts
+
+add screenshots
+
+merge HasSize and Resizeable
+
+GlFunctions should basically not be used, split it into functions which should be used and those who should not.
+
+test keydown keyup and mouse up
+
+add examples for keyboard interaction
+
+physics types
+
+add special key interaction
+
+loading shapes from common filetypes
+
+define all types in units
+
+more examples and update the README
+
+tests!
+
+use maybe types in methods like closest
+
+also document function params or fields of data types
+
+search structures (quad tree) for faster collision detection
+
+missing right click binding
+
+tileposition should be of type (Int, Int)
+
+prefix types of classes to all of their functions / fields (or at least some unique prefix)
+
+update readme, since it doesnt mention the search trees and much more
